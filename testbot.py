@@ -22,7 +22,7 @@ def handle_start_help(message):
     bot.send_message(message.chat.id, "Добро пожаловать!👋 \nЯ Юрист Ассистент, а ниже представлены команды, которые я могу выполнять 🤖", reply_markup=keyboard)
 
 @bot.message_handler(content_types=["text"])
-def handle_start_help(message):
+def handle_start_text(message):
     if message.text == "Максон":
         bot.send_message(message.chat.id, "Да\nДа Да\nЭт я)")
     keyboard = types.InlineKeyboardMarkup(row_width=1)
