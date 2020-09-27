@@ -53,7 +53,7 @@ def callback_inline(call):
             keyboard = types.InlineKeyboardMarkup (row_width=1)
             back_button = types.InlineKeyboardButton(text="Вернуться назад", callback_data = "back")
             keyboard.add(back_button)
-            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="Вас могут избить)", reply_markup=keyboard)
+            bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text="Вам могут предъявить штраф, а так же могут забрать в участок.", reply_markup=keyboard)
 
 
 if __name__ == '__main__':
